@@ -1,0 +1,52 @@
+.header {
+  border: darkgreen 1rem solid;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  line-height: var(--navbar-height);
+  text-align: center;
+  font-family: cool-logo;
+  color: #597e57;
+}
+.main {
+  text-align: center;
+}
+
+#user-form {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form label {
+  display: block;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 50%;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+input[type="submit"] {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  min-width: 10rem;
+
+  border-radius: 20px;
+  border: 0;
+  background: lightgreen;
+  background: linear-gradient(to right, #597e57, #6bc55e, lightgreen);
+}
+
+a,
+a:link,
+a:visited,
+a:focus {
+  text-decoration: underline;
+  color: darkgreen;
+}

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: cool-logo;
+  src: url("../fonts/FastHand-lgBMV.ttf");
+}
+
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+  background-color: greenyellow;
+}
+:root {
+  --navbar-height: 3rem;
+  --max-width: 900px;
+}
