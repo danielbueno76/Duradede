@@ -1,0 +1,89 @@
+.navbar {
+  position: fixed;
+  background-color: darkgreen;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: var(--navbar-height);
+}
+
+.logo {
+  font-family: cool-logo, "Times New Roman", Times, serif;
+  line-height: var(--navbar-height);
+  text-align: center;
+  color: #113b0e;
+}
+
+#burger-checkbox {
+  display: none;
+}
+
+.burger-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+.burger-label:before {
+  content: "";
+  background-color: darkgray;
+  width: 1rem;
+  height: 0.12rem;
+  position: absolute;
+  left: 0.45rem;
+  top: 0.65rem;
+
+  box-shadow: 0 0.25rem 0 0 darkgray, 0 0.5rem 0 0 darkgray;
+}
+
+.navbar-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#burger-checkbox:checked ~ .navbar-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  height: calc(100vh - var(--navbar-height));
+  opacity: 0.85;
+}
+
+.navbar-item a {
+  color: azure;
+  display: block;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar .logo {
+    margin: 0 1rem;
+  }
+
+  .navbar .burger-label {
+    display: none;
+  }
+
+  .navbar-list {
+    display: flex;
+  }
+
+  .navbar-item a {
+    color: black;
+    font-size: 1.5rem;
+    line-height: var(--navbar-height);
+    padding: 0 1rem;
+  }
+}

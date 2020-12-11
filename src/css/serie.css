@@ -1,0 +1,21 @@
+/* .title {
+  position: absolute;
+  top: auto;
+  right: 50%;
+  padding: 1rem;
+  font-size: larger;
+  font-weight: 10%;
+}
+.image {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  margin: 2rem;
+  padding: 1.1rem;
+}
+
+.image img {
+  height: 300px;
+  position: absolute;
+  left: auto;
+} */

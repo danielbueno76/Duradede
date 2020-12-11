@@ -3,14 +3,29 @@
   src: url("../fonts/FastHand-lgBMV.ttf");
 }
 
+:root {
+  --navbar-height: 3rem;
+  --max-width: 900px;
+}
+
 * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 html {
-  background-color: greenyellow;
+  background: linear-gradient(to right, #083606, #34d31b, rgb(121, 238, 121));
+  scroll-behavior: smooth;
 }
-:root {
-  --navbar-height: 3rem;
-  --max-width: 900px;
+
+.main {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+a,
+a:link,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: rgb(15, 59, 15);
 }

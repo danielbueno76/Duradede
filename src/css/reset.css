@@ -17,5 +17,6 @@ body {
 /* elementos media, responsive */
 img,
 video {
-  max-width: 100%;
+  max-width: 80%;
+  border: black 0.5rem solid;
 }

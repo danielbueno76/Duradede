@@ -1,0 +1,85 @@
+.item-ms:hover {
+  flex-grow: 5;
+}
+
+.description {
+  background-color: whitesmoke;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 2rem;
+  padding: 1.1rem;
+
+  visibility: hidden;
+  opacity: 0;
+  text-align: left;
+  border: black 0.5rem solid;
+}
+
+.item-ms {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.item-ms img:hover ~ .description {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+label {
+  cursor: pointer;
+  margin: auto;
+  padding: auto;
+}
+label [type="checkbox"] {
+  display: none;
+}
+
+[type="checkbox"] + span img {
+  display: inline-block;
+  border: none;
+  width: 2rem;
+  height: 1.9rem;
+}
+:checked + span img {
+  border: none;
+  width: 2rem;
+  height: 1.9rem;
+  background-color: red;
+}
+
+@media (min-width: 768px) {
+  .item-ms-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+  }
+
+  .item-ms img {
+    height: 200px;
+    object-fit: cover;
+    object-position: center top;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .description {
+    background-color: whitesmoke;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 2rem;
+    padding: 1.1rem;
+
+    visibility: hidden;
+    opacity: 0;
+    text-align: left;
+    border: black 0.5rem solid;
+  }
+}
