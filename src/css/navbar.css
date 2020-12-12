@@ -62,7 +62,17 @@
   font-size: 2rem;
 }
 
-@media (min-width: 768px) {
+.navbar-item input[type="search"] {
+  color: black;
+  display: inline-block;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 2rem;
+  height: var(--navbar-height);
+  width: 100%;
+}
+
+@media (min-width: 830px) {
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -78,6 +88,7 @@
 
   .navbar-list {
     display: flex;
+    justify-content: flex-end;
   }
 
   .navbar-item a {
@@ -85,5 +96,12 @@
     font-size: 1.5rem;
     line-height: var(--navbar-height);
     padding: 0 1rem;
+  }
+  .navbar-item input[type="search"] {
+    text-align: left;
+  }
+  .navbar-item.search {
+    height: var(--navbar-height);
+    width: 30%;
   }
 }

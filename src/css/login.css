@@ -52,3 +52,9 @@ a:focus {
   text-decoration: underline;
   color: black;
 }
+
+footer {
+  margin-top: 10px;
+  bottom: 0;
+  position: absolute;
+}

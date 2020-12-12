@@ -14,6 +14,7 @@
 
 html {
   background: linear-gradient(to right, #083606, #34d31b, rgb(121, 238, 121));
+  background-attachment: fixed;
   scroll-behavior: smooth;
 }
 
@@ -28,4 +29,9 @@ a:visited,
 a:focus {
   text-decoration: none;
   color: rgb(15, 59, 15);
+}
+
+footer {
+  margin-top: 10px;
+  bottom: 0;
 }
