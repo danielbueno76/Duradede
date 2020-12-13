@@ -5,7 +5,7 @@
 .description {
   background-color: whitesmoke;
   position: absolute;
-  bottom: 0;
+  bottom: auto;
   left: 0;
   margin: 2rem;
   padding: 1.1rem;
@@ -24,7 +24,7 @@
   margin: 0;
 }
 
-.item-ms img:hover ~ .description {
+.item-ms a:hover ~ .description {
   visibility: visible;
   opacity: 1;
   transition: 0.5s;
