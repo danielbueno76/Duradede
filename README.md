@@ -48,13 +48,16 @@ Como estamos buscando un producto mínimo viable que podamos poner en marcha ens
 
    d. “Rejilla” con contenido relacionado, que se usará para los episodios en el caso de una serie o para películas similares en el caso de las películas.
 
-4. (OPCIONAL) Crear una página de error 404 Not Found. Esta página es de implementación opcional. La página debe contener de forma destacada el código y el título del error (404, Página no encontrada). Para evitar que el visitante abandone la página, incluirá (al menos) una de estas dos opciones: un enlace para volver al inicio, un mapa del contenido del sitio web. Actualmente no funciona, pero la implementacion con .htaccess esta hecha.
+4. Crear una página de error 404 Not Found. La página debe contener de forma destacada el código y el título del error (404, Página no encontrada). Para evitar que el visitante abandone la página, incluirá (al menos) una de estas dos opciones: un enlace para volver al inicio, un mapa del contenido del sitio web.
 
-### Detalles de implementación
+## Detalles de prueba
 
-- La estructura de la web tendrá en cuenta las etiquetas de contenido semántico.
-- Debéis incluir las media queries necesarias para que el diseño sea responsivo.
-- Las animaciones o interactividad propuesta deben realizarse exclusivamente mediante técnicas CSS sin el uso de librerías externas.
-- No es necesario realizar múltiples páginas distintas para diferentes películas. Cualquier película, serie o episodio enlazará con la misma página de detalle.
-- Se valorará el uso de atributos especiales de accesibilidad, microformatos…
-- Los apartados marcados como opcionales no son necesarios para obtener la calificación de APTA, pero se valorarán positivamente.
+### Tras bajarse el repositorio remoto a tu local, se usará Visual Code para probarlo. Con BrowserSync se levantará un servidor para probarlo rapidamente. Contenido:
+
+1. Primera pagina es el login. Introduce un usuario(e-mail) y contraseña y te redireccionará a la página de series(actualmente no hay películas)
+
+2. Página de series. Puedes pasar el ratón sobre una serie y te mostrará una descripción. Si pulsas el icono del corazón, pondrás como favorito la serie. Si pinchas en la imagen te redireccionará al contenido de la serie.
+
+3. La página de cada serie es la misma. Dispone de un título, trailer, descripción completa y una rejilla a la derecha de la lista de episodios. Si pinchas en un episodio, verás una descripción del mismo.
+
+4. Página 404.html. Para acceder introduce la página directamente desde la URL. Verás un mensaje descriptivo y un enlace para volver a la primera página.
